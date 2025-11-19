@@ -1,0 +1,10 @@
+@import "tailwindcss";
+.dark {
+  background-color: #000 !important;
+  color: white !important;
+}
+
+.dark button, .dark input, .dark textarea {
+  background-color: #333 !important;
+  color: white !important;
+}
