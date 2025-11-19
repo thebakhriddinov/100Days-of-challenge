@@ -1,34 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { useState } from "react"
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [message, setMessage] = useState("")
+
+  const handleLogin = () => {
+    if(email.trim() === "" || password.trim() === "") {
+      setMessage("Please fill the form !")
+      return;
+    }
+
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="h-screen flex flex-col items-center justify-around bg-[#223242]">
+      <h1 className="text-[62px] font-bold text-white">Day 10 Simple Login</h1>
+
+      {/* Login box */}
+      <div className="flex flex-col gap-5 items-center justify-center w-[500px] h-[400px] shadow-[0_0_7px_1px_rgba(255,255,255,0.5)] rounded-3xl bg-[#223242] inset-0">
+        <h2 className="text-[35px] text-white font-semibold ">Sign in</h2>
+        <input 
+          type="email" 
+          placeholder="Enter email"
+          onChange={(e) => setEmail(e.target.value)}
+          className="w-[400px] h-13 rounded-full shadow-[0_0_5px_1px_rgba(255,255,255,0.5)] pl-10 placeholder:text-[#abaaaa]"
+        />
+
+        <input 
+          type="password" 
+          placeholder="Enter password"
+          onChange={(e) => setPassword(e.target.value)}
+          className="w-[400px] h-13 rounded-full shadow-[0_0_5px_1px_rgba(255,255,255,0.5)] pl-10 placeholder:text-[#abaaaa]"
+          />
+
+          <button
+            onClick={handleLogin}
+            className="bg-[#02DEC4] w-[400px] h-12 rounded-full text-[24px] text-white font-semibold hover:shadow-[0_0_5px_1px_rgba(255,255,255,0.5)]"
+          >
+            Login
+          </button>
+
+          {/* Result message */}
+          <p className="text-center text-white">
+            {message}
+          </p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+    </div>
   )
 }
 
