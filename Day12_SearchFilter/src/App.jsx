@@ -5,7 +5,7 @@ function App() {
   const [search, setSearch] = useState("");
 
   const users = [
-    "Ozodbek",
+    "Mustafo",
     "Muhammad",
     "Jasur",
     "Kamron",
