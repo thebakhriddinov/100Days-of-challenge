@@ -1,4 +1,5 @@
 import nature from "./assets/nature.jpg"
+import nature2 from "./assets/nature2.jpg"
 
 export default function App() {
   return (
@@ -9,8 +10,8 @@ export default function App() {
         <img className="border-2 border-[blue] rounded-2xl hover:scale-120 transition-all" src={nature} alt="nature" />
         <img className="border-2 border-[blue] rounded-2xl hover:scale-120 transition-all" src={nature} alt="nature" />
         <img className="border-2 border-[blue] rounded-2xl hover:scale-120 transition-all" src={nature} alt="nature" />
-        <img className="border-2 border-[blue] rounded-2xl hover:scale-120 transition-all" src={nature} alt="nature" />
-        <img className="border-2 border-[blue] rounded-2xl hover:scale-120 transition-all" src={nature} alt="nature" />
+        <img className="border-2 border-[blue] rounded-2xl hover:scale-120 transition-all" src={nature2} alt="nature" />
+        <img className="border-2 border-[blue] rounded-2xl hover:scale-120 transition-all" src={nature2} alt="nature" />
       </div>
 
     </div>
