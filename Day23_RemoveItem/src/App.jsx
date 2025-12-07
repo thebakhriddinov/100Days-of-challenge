@@ -3,10 +3,10 @@ import React, { useState } from "react";
 export default function RemoveItem() {
 
   const [items, setItems] = useState([
-    "Apple",
-    "Banana",
-    "Orange",
-    "Grapes",
+    "Mustafo",
+    "Mehriddin",
+    "Muhammadaziz",
+    "Eshmat",
   ]);
 
 
