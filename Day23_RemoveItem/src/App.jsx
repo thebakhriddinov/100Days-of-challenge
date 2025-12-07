@@ -23,7 +23,7 @@ export default function RemoveItem() {
       {items.map((item, index) => (
         <div
           key={index}
-          className=" flex w-[500px] justify-between items-center border-2 border-blue-900 rounded-[7px] bg-blue-900"
+          className=" flex w-[500px] justify-between items-center border-2 border-blue-900 rounded-[10px] bg-blue-900"
         >
           {/* Item nomi */}
           <span className="text-white ml-2 ">{item}</span>
@@ -31,7 +31,7 @@ export default function RemoveItem() {
           {/* Remove tugmasi */}
           <button
             onClick={() => removeItem(index)}
-            className="bg-red-500 text-white border-none w-23 h-10 cursor:pointer rounded-[5px]"
+            className="bg-red-500 text-white border-none w-23 h-10 cursor:pointer rounded-[8px]"
             style={{
               background: "red",
               color: "white",
