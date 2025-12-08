@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./ImageSlider.css";
 
 import barca from "../assets/barca.jpg";
