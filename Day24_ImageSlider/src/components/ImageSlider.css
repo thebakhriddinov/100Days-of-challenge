@@ -62,6 +62,11 @@ position: relative;
   background: #a50044;
 }
 
+.nav-btn2:hover {
+  background: blue;
+}
+
+
 .left-btn {
     display: flex;
     justify-content: center;

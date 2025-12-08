@@ -39,7 +39,7 @@ export default function ImageSlider() {
           <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
         </div>
 
-        <button className="nav-btn right-btn" onClick={nextSlide}>
+        <button className="nav-btn nav-btn2 right-btn" onClick={nextSlide}>
           ❯
         </button>
       </div>
