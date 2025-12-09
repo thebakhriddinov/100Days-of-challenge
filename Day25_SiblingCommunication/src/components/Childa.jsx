@@ -1,5 +1,3 @@
-import { React } from "react";
-
 export default function ChildA({ setMessage }) {
   return (
     <div className="bg-white p-4 rounded-xl shadow w-80 mb-4">

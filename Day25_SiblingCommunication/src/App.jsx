@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Childa from "./components/Childa";
 import Childb from "./components/Childb";
 
