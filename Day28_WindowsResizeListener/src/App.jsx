@@ -32,7 +32,7 @@ export default function WindowResizeListener() {
   };
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center text-lg bg-gray-100">
+    <div className="ml-auto mr-auto h-screen w-[100vw] w-full flex flex-col items-center justify-center text-lg bg-gray-100">
       <div className="text-xl mb-4">Window Resize Listener</div>
       <div className="text-2xl mb-2">
         Width: {width}px | Height: {height}px
