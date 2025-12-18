@@ -15,7 +15,7 @@ export default function App() {
     }
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // boshlanishida tekshiradi
+    handleScroll(); 
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
