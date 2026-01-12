@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { products } from "./data";
+import { products } from "./data.js";
 import ProductCard from "./components/ProductCard";
 import Cart from "./components/Cart";
 
@@ -28,8 +28,8 @@ export default function App() {
   }
   return (
     <div style={layout}>
-      <div>
-        <h1>Mini E-commerce</h1>
+      <div className="w-screen h-screen flex flex-col ">
+        <h1 className="text-start pb-10">Mini E-commerce</h1>
 
         <div style={grid}>
           {products.map(p => (
@@ -49,6 +49,8 @@ export default function App() {
 }
 
 const layout = {
+  backgroundColor:"#021B4C",
+  color:"white",
   display: "flex",
   gap: "30px",
   padding: "20px",
